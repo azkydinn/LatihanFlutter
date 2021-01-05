@@ -16,7 +16,7 @@ class User{
   }
 
   static Future<User> connectToAPI(String id) async {//method akan mengembalikan data dimasa yang akan datang( setelah dapat data dari API)
-    String apiURL = "https://reqres.in/api/users/" + id;
+    String apiURL = "https://reqres.in/api/userslearn_bloc" + id;
 
   var apiResult = await http.get(apiURL); 
   var jsonObject = json.decode(apiResult.body);
